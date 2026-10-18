@@ -1,0 +1,12 @@
+services:
+  app:
+    build: .
+    image: nysanbekova-laura-devops
+    container_name: nysanbekova-laura-container
+    environment:
+      STUDENT_NAME: Laura
+      STUDENT_SURNAME: Nysanbekova
+      STUDENT_GROUP: IT2-2309
+      STUDENT_ID: "37962"
+    ports:
+      - "8080:8080"
